@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js">
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navBar">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="allEvent.html">Alla event</a></li>
+                <li><a href="eventDetail.html">Event detalj</a></li>
+                <li><a href="aboutus.html">Om oss</a></li>
+                <li><a href="eventForm.html">Event Form</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="container-form">
+                <form class="form event-form">
+                        <div class="row-form">
+                            <label for="name">Namn</label>
+                            <input type="text" id="name" placeholder="Förnamn och efternamn">
+                        </div>
+                        <div class="row-form ">
+                            <label for="datum">Datum</label>
+                            <input type="date" id="datum" placeholder="Epostadress@hotmail.com">
+                        </div>
+                        <div class="row-form ">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="Epostadress@hotmail.com">
+                        </div>
+                
+                    <div class="row-form ">
+                       <label for="messesage">Meddelande</label>
+                        <textarea placeholder="Meddelande" id="message"></textarea> 
+                    </div>
+                    <div class="row-form ">
+                        <label for="messesage">Agenda</label>
+                         <textarea placeholder="Agenda" id="message"></textarea> 
+                     </div>
+                     <div class="row-form">
+                         <label for="picture">Bilder</label>
+                         <input type="file">
+                         <input type="file">
+                         <input type="file">
+                         <input type="file">
+                     </div>
+                     <div class="row-form ">
+                         <label for="category">Kategory</label>
+                        <select name="category" id="category">
+                            <option value="Nöje">Nöje</option>
+                            <option value="Resa">Resa</option>
+                            <option value="Matlagning">Utbildning</option>
+                        </select>
+                     </div>
+                    <div class="row-form  center-content">
+                        <button type="button" class="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

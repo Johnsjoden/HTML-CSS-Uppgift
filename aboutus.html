@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js">
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navBar">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="allEvent.html">Alla event</a></li>
+                <li><a href="eventDetail.html">Event detalj</a></li>
+                <li><a href="aboutus.html">Om oss</a></li>
+                <li><a href="eventForm.html">Event Form</a></li>
+
+            </ul>
+        </div>
+        <div class="row">
+            <div class="header">
+                <h1>
+                    Om oss
+                </h1>
+                
+            </div>
+            <div class="row">
+                <div class="row1">
+                <h1>Rubrik</h1>
+                <p>Paragraf: Lorem ipsum dolor sit amet consectetur adipisicing elit. Non id neque itaque omnis praesentium dicta, sed sit molestias magni eius repellat adipisci recusandae.</p>
+            </div>
+            <div class="row1">
+                <h1>Rubrik</h1>
+                <p>Paragraf: Lorem ipsum dolor sit amet consectetur adipisicing elit. Non id neque itaque omnis praesentium dicta, sed sit molestias magni eius repellat adipisci recusandae.</p>
+                
+            </div>
+                <div class="row">
+                    <div class="center-text">
+                        <img src="https://culturedvultures.com/wp-content/uploads/2014/01/Leo-in-Wolf.jpg" alt="">
+                    <p>VD</p>
+                    <a href="tel:071423423">0714232423</a> <br/>
+                    <br/>
+                    <a href="mailto:vdmail@gmail.com">vdmail@gmail.com</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+            <div class="row">
+                <img  class="imgTeam" src="https://www.bosshunting.com.au/wp-content/uploads/2019/12/5505193-maxresdefault2222-1200x640.jpg" alt="">
+            </div>
+            <div class="row center-content">
+                <div class="container-form">
+                    <form class="form">
+                        <h1 id="messageSubmit">Tack för ditt Meddelande</h1>
+                        <h1 class="hideWhenSubmit">Kontakta oss</h1>
+                        <div class="hideWhenSubmit">
+                            <div class="row-form">
+                                <label for="name">Namn</label>
+                                <input type="text" id="name" placeholder="Förnamn och efternamn">
+                            </div>
+                            <div class="row-form hideWhenSubmit">
+                                <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Epostadress@hotmail.com">
+                            </div>
+                    
+                        <div class="row-form hideWhenSubmit">
+                           <label for="messesage">Meddelande</label>
+                            <textarea placeholder="Meddelande" id="message"></textarea> 
+                        </div>
+                        <div class="row-form hideWhenSubmit center-content">
+                            <button type="button" class="submit">Submit</button>
+                        </div>
+                        
+                        </div>
+                        
+                        
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+        
+
+
+
+    </div>
+    <script>
+        $("#messageSubmit").hide()
+        $(".submit").on("click", function(){
+            $(".hideWhenSubmit").hide()
+            $("#messageSubmit").show()
+        })
+
+    </script>
+</body>
+
+</html>

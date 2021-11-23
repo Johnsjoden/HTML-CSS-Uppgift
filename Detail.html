@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js">
+    </script>
+    <link rel="stylesheet" href="countdown.demo.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navBar">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="allEvent.html">Alla event</a></li>
+                <li><a href="Detail.html">Event detalj</a></li>
+                <li><a href="aboutus.html">Om oss</a></li>
+                <li><a href="eventForm.html">Event Form</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div>
+                <h1>Africa Safari</h1>
+                <div class="row1">
+                        <p>Kort beskrivning: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <p>Agenda: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem deserunt possimus debitis omnis tempore similique veritatis qui id, blanditiis itaque quis natus nulla iusto.</p>
+                        <p>Datum: 22/05/1</p>
+                        <p>Kategori: Resa</p>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="row1-detail">
+                    <img src="https://media.istockphoto.com/photos/sunset-at-savannah-plains-picture-id1140829787?b=1&k=20&m=1140829787&s=170667a&w=0&h=jMkZ6MXWWXaXaZnzVMaOJTzXQtPTEdaAqZN_9XSt2Ww="
+                        alt="Africa Safari">
+                </div>
+                <div class="row2-detail">
+                        <img src="https://media.istockphoto.com/photos/lions-being-viewed-on-safari-picture-id1286897311?b=1&k=20&m=1286897311&s=170667a&w=0&h=7xcsb3r71renfSJ_3upZYetQImj-eXDC69z33F4Afdc="
+                        alt="Africa Safari">
+                </div>
+                <div class="row3-detail">
+                    <img src="https://media.istockphoto.com/photos/woman-tourist-on-safari-in-africa-traveling-by-car-with-an-open-roof-picture-id1212707655?b=1&k=20&m=1212707655&s=170667a&w=0&h=lmlqaX3dYFXbbBfKo2bugIuhjKF8OWBXtTldT6Kbufo=" 
+                    alt="Africa Safari">
+                        
+                </div>
+                <div class="row4-detail">
+                    <img src="https://media.istockphoto.com/photos/safari-car-is-waiting-for-crossing-elephants-picture-id168252293?b=1&k=20&m=168252293&s=170667a&w=0&h=Q3vyI922Ipb5IbhjjNk1PdEYbaoeoHy94_u_3FANsDg="
+                        alt="Africa Safari">
+                        
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <script>
+        $("#countDown").countdown
+        $("img").on("mouseenter", function(){
+            $(this).width("103%")
+        })
+        $("img").on("mouseleave", function(){
+            $(this).width("100%")
+        })
+        $('.alt-1').countDown({
+                css_class: 'countdown-alt-1'
+            });
+        
+    </script>
+</body>
+
+</html>
